@@ -1,0 +1,6 @@
+# Se genera en cada PC con el usuario local
+.env
+
+# Capturas de la radio (pueden pesar cientos de MB)
+capturas/*
+!capturas/.gitkeep

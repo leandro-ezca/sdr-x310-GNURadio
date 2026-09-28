@@ -1,0 +1,16 @@
+services:
+  sdr:
+    image: sdr-x310
+    build: .
+    network_mode: host
+    user: "${UID}:${GID}"
+    environment:
+      - HOME=/tmp
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./capturas:/capturas
+      - ./flowgraphs:/flowgraphs
+    working_dir: /flowgraphs
+    stdin_open: true
+    tty: true
