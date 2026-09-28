@@ -55,6 +55,8 @@ sudo sysctl --system
 ```bash
 git clone <URL-del-repo>
 cd sdr-x310
+./sdr.sh buildgit clone https://github.com/leandro-ezca/sdr-x310-GNURadio.git
+cd sdr-x310-GNURadio
 ./sdr.sh build
 ```
 
